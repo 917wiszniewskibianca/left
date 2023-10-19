@@ -1,0 +1,1 @@
+/$#gcd of 2 numbersinteger a, b;read a, b ;show  Ógcd of{ _ } and { _ }Ó, a, b  ;if(a = 0){      if(b=0){          show Óundefined Ò  ;         }show b ;}else if(b = 0)        show a ;while(a ! b){      if(a>b)            a == a-b; }else if( b>a)      b ==  b-a;}show Ò is: {_} Ó, a ; $/

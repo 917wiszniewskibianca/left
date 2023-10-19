@@ -1,0 +1,1 @@
+/$#sum of n numbersinteger a[100], length, sum == 0;for( integer i ==0; i<length; i==i +1){      sum== sum+ a[i];}show(Ósum of  the numbers is {_} Ó, sum); $/

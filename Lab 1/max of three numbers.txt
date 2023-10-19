@@ -1,0 +1,1 @@
+/$# max of three numbersinteger x, y, z;read x, y, z ;show Òthe maximum number is: Ó;if(x >y){        if(x>z)             {show x ;}       else           {show z ;} }else{      if(y>z )          {show y;}}Else      {show z; }}$/
