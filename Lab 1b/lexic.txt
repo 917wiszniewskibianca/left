@@ -1,0 +1,8 @@
+Lexic    - Symbols- Alphabet : lowercase and uppercase letters, digits (0-9)  and  _ - Operators :                 - Relational : < , > , => , <= , ! ( not equal) , = (equal)                - Arithmetic:  + ,- , :  , *                - Assignment : ==                 - Logical : & , ||                - Comment : </ , /> - Separators : [  ]  {  }  \n  space ,- Reserved words :  read, show , if, else , integer, character ,string ,  while , for , program ( for declaring a function) , class    - Rules                           - letter = "a"|"b"|...|"y"|"z"|"A"|"B"|...|"Y"|"Z"                          - digit = "0"|"1"|"2"|...|"8"|"9"                          - white space = Ò \n Ò | Ò Ò    - Identifiers                           - a sequence of letters followed by a sequence of digits that must start with _                           - id = Ò_Ó |"_"{letter}{digit }    - Constants                       - It is possible to make constants out of digits , char and string types.                      - integer :  must be a digit or sequence of digits not starting with 0 
+                      - integer = nonZeroDigit {digit};
+                      - nonZeroDigit = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
+                      - digit = "0" | nonZeroDigit;
+
+                      - string ={character}     
+                      - character = 'letter' | 'digit'
+                
