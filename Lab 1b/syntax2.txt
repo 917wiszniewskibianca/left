@@ -1,1 +1,54 @@
-Program = "program" Identifier "(" ParameterList ")" StatementBlockParameterList = Parameter {"," Parameter}Parameter = Type IdentifierType = "integer" | "character" | "string"StatementBlock = "{" StatementList "}"StatementList = Statement ";" StatementList | ?Statement = AssignmentStatement | IfStatement | WhileStatement | ForStatement | ReadStatement | ShowStatementAssignmentStatement = Identifier "==" ExpressionIfStatement = "if" "(" Expression ")" StatementBlock "else" StatementBlockWhileStatement = "while" "(" Expression ")" StatementBlockForStatement = "for" "(" AssignmentStatement ";" Expression ";" AssignmentStatement ")" StatementBlockReadStatement = "read" IdentifierShowStatement = "show" ExpressionExpression = SimpleExpression | SimpleExpression "&" SimpleExpression | SimpleExpression "||" SimpleExpressionSimpleExpression = Constant | IdentifierConstant = IntegerConstant | CharacterConstant | StringConstantIntegerConstant = Digit {Digit}CharacterConstant = "'" Character "'"StringConstant = “'“ {Letter | Digit } "'"Identifier = "_" (Letter | Digit)Letter = "a" | "b" | ... | "y" | "z" | "A" | "B" | ... | "Y" | "Z"Digit = "0" | "1" | "2" | ... | "8" | "9"
+Program = "program" Identifier "(" ParameterList ")" StatementBlock
+
+ParameterList = Parameter {"," Parameter}
+
+Parameter = Type Identifier
+
+Type = "integer" | "character" | "string"
+
+StatementBlock = "{" StatementList "}"
+
+StatementList = Statement ";" StatementList | ?
+
+Statement = AssignmentStatement | IfStatement | WhileStatement | ForStatement | ReadStatement | ShowStatement
+
+AssignmentStatement = Identifier "==" Expression
+
+IfStatement = "if" "(" Expression ")" StatementBlock "else" StatementBlock
+
+WhileStatement = "while" "(" Expression ")" StatementBlock
+
+ForStatement = "for" "(" AssignmentStatement ";" Expression ";" AssignmentStatement ")" StatementBlock
+
+ReadStatement = "read" Identifier
+
+ShowStatement = "show" Expression
+
+Expression = SimpleExpression | SimpleExpression "&" SimpleExpression | SimpleExpression "||" SimpleExpression
+
+
+
+SimpleExpression = Term Relational Operator Term
+Term = Identifier | Constant
+Relational Operator = "<" , "> "," =>" ," <= ", "!", "="
+
+ArithmeticExpression = Term Arithmetic Operator Term
+Term = Identifier | Constant | "(" ArithmeticExpression ")"
+ArithmeticOperator = "+" | "-" | "*" | ":" 
+
+
+
+
+Constant = IntegerConstant | CharacterConstant | StringConstant
+
+IntegerConstant = Digit {Digit}
+
+CharacterConstant = "'" Character "'"
+
+StringConstant = “'“ {Letter | Digit } "'"
+
+Identifier = "_" (Letter | Digit)
+
+Letter = "a" | "b" | ... | "y" | "z" | "A" | "B" | ... | "Y" | "Z"
+
+Digit = "0" | "1" | "2" | ... | "8" | "9"
