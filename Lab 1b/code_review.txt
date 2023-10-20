@@ -1,0 +1,5 @@
+Code review 914TabitaLucaciu 
+https://github.com/lavinia06/LFTC-labs/tree/main/Lab2
+- In the lexic.in she has 2 reserved words find_maxim and find_minim, check_prime that I don’t get why they are reserved words , as it seems they are some functions ; also they are not included in the token.in 	
+- expression ::= expression "+" term | term // I would change “ + “  for operator 
+- everything else looks good
