@@ -1,0 +1,10 @@
+{
+ integer 3a , 6b
+ read b
+ read a
+ while b
+        a= b
+        b = a % b
+ return a
+
+}
