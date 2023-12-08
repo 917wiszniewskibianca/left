@@ -1,0 +1,10 @@
+Identifier Table:
+0 -> [('x', None)]
+1 -> [('y', None)]
+2 -> [('z', None)]
+7 -> [('a', None)]
+8 -> [('b', None)]
+9 -> [('c', None)]
+26 -> [('max', None)]
+
+Constant Table:
